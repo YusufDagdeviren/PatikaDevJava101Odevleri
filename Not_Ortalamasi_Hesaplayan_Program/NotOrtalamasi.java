@@ -28,10 +28,10 @@ public class NotOrtalamasi {
         tarih = scanner.nextInt();
         System.out.println("Lutfen muzik notunuzu giriniz: ");
         muzik = scanner.nextInt();
-        int toplam = matematik+fizik+kimya+turkce+tarih+muzik;
-        double ort = toplam/6.0;
-        System.out.println("Ortalamanız="+ort);
-        String gecmeDurumu = (ort>=60) ? "Gecti :)":"Kaldi :(";
+        int toplam = matematik + fizik + kimya + turkce + tarih + muzik;
+        double ort = toplam / 6.0;
+        System.out.println("Ortalamanız=" + ort);
+        String gecmeDurumu = (ort >= 60) ? "Gecti :)" : "Kaldi :(";
         System.out.println(gecmeDurumu);
 
     }
