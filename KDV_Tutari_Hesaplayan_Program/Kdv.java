@@ -22,21 +22,20 @@ public class Kdv {
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        double tutar,kdvOran,kdvTutar,kdvliTutar;
+        double tutar, kdvOran, kdvTutar, kdvliTutar;
         System.out.println("Lutfen urunun tutarini giriniz: ");
         tutar = scanner.nextDouble();
-        if(tutar>0 && tutar<1000){
+        if (tutar > 0 && tutar < 1000) {
             kdvOran = 0.18;
-        }else{
+        } else {
             kdvOran = 0.08;
         }
-        kdvTutar = tutar*kdvOran;
-        kdvliTutar = tutar+kdvTutar;
-        System.out.println("Kdv'siz tutar: "+tutar);
-        System.out.println("Kdv orani: "+kdvOran);
-        System.out.println("Kdv tutari: "+kdvTutar);
-        System.out.println("Kdv'li fiyat: "+kdvliTutar);
-
+        kdvTutar = tutar * kdvOran;
+        kdvliTutar = tutar + kdvTutar;
+        System.out.println("Kdv'siz tutar: " + tutar);
+        System.out.println("Kdv orani: " + kdvOran);
+        System.out.println("Kdv tutari: " + kdvTutar);
+        System.out.println("Kdv'li fiyat: " + kdvliTutar);
 
     }
 }
