@@ -13,12 +13,12 @@ public class DaireAlanBul {
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        double merkezAci,yaricap,alan;
+        double merkezAci, yaricap, alan;
         System.out.println("Lütfen merkez acisi olcusu giriniz: ");
         merkezAci = scanner.nextDouble();
         System.out.println("Lutfen yaricap giriniz: ");
         yaricap = scanner.nextDouble();
-        alan = (Math.PI*Math.pow(yaricap, 2)*merkezAci)/360;
-        System.out.println("Alan = "+alan);
+        alan = (Math.PI * Math.pow(yaricap, 2) * merkezAci) / 360;
+        System.out.println("Alan = " + alan);
     }
 }
