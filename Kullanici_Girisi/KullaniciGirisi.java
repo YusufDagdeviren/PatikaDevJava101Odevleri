@@ -18,7 +18,7 @@ public class KullaniciGirisi {
         System.out.println("Lutfen sifrenizi giriniz: ");
         sifre = scanner.nextLine();
         if (kullaniciAdi.equals("Yusuf") && sifre.equals("12345")) {
-            System.out.println("Kullanici girisi doğru");
+            System.out.println("Kullanici girisi dogru");
         } else if (!sifre.equals("12345")) {
             System.out.println("Yanlis sifre lutfen sifrenizi sifirlamak ister misiniz? (e/h)");
             char soru = scanner.nextLine().charAt(0);
