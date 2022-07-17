@@ -1,39 +1,32 @@
 package Tekrar_Bul;
 
-import java.util.Arrays;
-
 public class Bul {
-    static boolean isFind(int[] arr, int value) {
-        for (int i : arr) {
-            if (i == value) {
-                return true;
-            }
-        }
-        return false;
-    }
 
     public static void main(String[] args) {
+        int[] sayi = { 1, 2, 22, 3, 4, 3, 3, 2, 6, 7, 8, 1, 2 };
+        int[] tekrar = new int[sayi.length];
+        int temp, kontrol = 0;
+        for (int i = 0; i < sayi.length; i++) {
 
-        int[] list = {3, 7, 3, 3, 2, 9, 10, 21, 1, 33, 9, 1};
-        int[] duplicate = new int[list.length];
-        int startIndex = 0;
-
-        for (int i = 0; i < list.length; i++) {
-            for (int j = 0; j < list.length; j++) {
-                if ( (i != j) && (list[i] == list[j])){
-                    if (!isFind(duplicate, list[i])){
-                        duplicate [startIndex++] = list[i];
-                    }
-                    break;
+            temp = 0;
+            for (int j = 0; j < sayi.length; j++) {
+                if (sayi[i] == sayi[j]) {
+                    temp++;
                 }
             }
-        }
-        for (int value : duplicate){
-            if (value != 0){
-                System.out.print(value + " ");
+            if (temp != 1) {
+                for (int k = 0; k < tekrar.length; k++) {
+                    if (sayi[i] == tekrar[k]) {
+                        kontrol = 1;
+                    }
+                }
+                if (kontrol != 1) {
+                    System.out.println(sayi[i] + " elemani " + temp + " kez tekrar etti");
+                }
+
             }
+            tekrar[i] = sayi[i];
         }
-        System.out.println();
-        System.out.println(Arrays.toString(duplicate));
+
     }
 }
