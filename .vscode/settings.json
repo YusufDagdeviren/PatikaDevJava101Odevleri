@@ -1,8 +1,5 @@
 {
     "java.project.sourcePaths": [
-        "Transpozu_Bulma",
-        "Transpozu",
-        "HackerRank8",
-        "SayiTahmini_Oyunu"
+        "Palindrom_String"
     ]
 }
